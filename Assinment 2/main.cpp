@@ -6,6 +6,7 @@
 */
 
 #include <iostream>
+#include <cmath>
 #include <iomanip>
 using namespace std;
 
@@ -94,7 +95,7 @@ void loan_output(double P, double APR, int n){
         P_end -= principal;
         
         //displays loan monthly payment information in table format
-        cout << month << "\t\t$" << fixed << setprecision(2) << P_start << "\t\t$ " << interest << "\t\t$" << principal << "\t\t\t$" << P_end << endl;
+        cout << month << "\t\t$" << fixed << setprecision(2) << P_start << "\t\t\t$ " << interest << "\t\t$" << principal << "\t\t$" << P_end << endl;
     }
     //display loan summary information
     cout << endl << "Payments Every Month: $" << fixed << setprecision(2) << m << endl;
